@@ -1580,9 +1580,11 @@
 /* Box */
 
 	.box {
-		background: #fff;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		text-align: center;
+    background: #fff;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000000;
+    text-shadow: none;
 	}
 
 /* Icons */
@@ -1827,6 +1829,10 @@
 			.box {
 				padding: 2em;
 			}
+            
+           .portrait {
+               width: 207px; /* 187px width of image plus 25px border. */
+           }
 
 				.box.style1 {
 					padding: 3em 2em 3.5em 2em;
@@ -1838,6 +1844,7 @@
 
 				.box.style2 h3 {
 					margin-bottom: 0.25em;
+                  color: #000000;
 				}
 
 				.box.style2 .image {
