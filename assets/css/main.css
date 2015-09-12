@@ -1586,6 +1586,10 @@
     color: #000000;
     text-shadow: none;
 	}
+            
+    .portrait {
+        width: 207px; /* 187px width of image plus 25px border. */
+    }
 
 /* Icons */
 
@@ -1829,10 +1833,6 @@
 			.box {
 				padding: 2em;
 			}
-            
-           .portrait {
-               width: 207px; /* 187px width of image plus 25px border. */
-           }
 
 				.box.style1 {
 					padding: 3em 2em 3.5em 2em;
