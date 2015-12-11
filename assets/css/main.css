@@ -1128,6 +1128,7 @@
 		border-left: solid 0.75em #eee;
 		padding: 1em 0 1em 1.5em;
 		font-style: italic;
+       font-size: 1.5em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1859,7 +1860,7 @@
 
 			.wrapper {
 				padding: 8em 0 8em 0;
-				text-align: center;
+				/*text-align: center;*/
 			}
 
 				.wrapper.first {
@@ -1960,7 +1961,7 @@
 
 			.wrapper {
 				padding: 5em 0 5em 0;
-				text-align: center;
+				/*text-align: center;*/
 			}
 
 				.wrapper.first {
