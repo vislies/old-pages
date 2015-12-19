@@ -228,6 +228,32 @@
         </div>
       </article>
     </div>
+    <div class="wrapper style1">
+      <article class="container" id="parallel-performance">
+        <h2>Parallel Performance</h2>
+        <p><a href="http://kennethmoreland.com">Ken Moreland</a> talked next, and he started with some recent observations he made with parallel program performance. To measure how well an algorithm behaves on a parallel computer, particularly on large parallel computers, the accepted approach is to measure the time it takes to run the algorithm using different numbers of processors. If a parallel algorithm scales well, it will run faster when using more processors.</p>
+        <div class="row">
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="ParallelTimeResponsePerfect.svg"><img src="ParallelTimeResponsePerfect.svg" alt="" /></a></span></div>
+          <div class="8u 12u(mobile)">
+            <p>Because parallel algorithm scalability is measured based on the time response of the algorithm, it is natural to plot the algorithms running time vs the number of processors used. An algorithm said to be scalingn perfectly will have a running time inversely proportional to the number of processors (double the processors, half the running time), so the plot of a perfectly scaling algorithm will be a hyperbolic cuve as shown at the left. Experts in parallel algorithms are aware of this and compare running times to this perfect hyperbolic curve when judging an algorithm's scalability. The problem with looking at hyperbolic curves is that pretty much every parallel algorithm time response, including those with very poor scaling, look almost identical to a hyperbolic curve.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="ParallelTimeResponsePoor.svg"><img src="ParallelTimeResponsePoor.svg" alt="" /></a></span></div>
+          <div class="4u 12u(mobile)">
+            <p>Consider the curve on the left, which shows the time response of a parallel algorithm with a linear overhead with respect to number of processors. This is a very poorly performing algorithm, but it looks almost perfect when plotted. In contrast, when plotting the same data as the processing rate rather than the running time as shown at right, it is very clear at a glance that this algorithm scales poorly.</p>
+          </div>
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="ParallelRateResponsePoor.svg"><img src="ParallelRateResponsePoor.svg" alt="" /></a></span></div>
+        </div>
+        <div class="row">
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="ParallelTimeResponseReal.svg"><img src="ParallelTimeResponseReal.svg" alt="" /></a></span></div>
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="ParallelRateResponseReal.svg"><img src="ParallelRateResponseReal.svg" alt="" /></a></span></div>
+          <div class="4u 12u(mobile)">
+            <p>Although the previous three charts are of synthetic data, the same behavior can be seen in the field. The two plots on the left both come from the same performance data measured on a real parallel algorithm. The time response looks pretty close to the desired perfect hyperbolic curve, but the rate response reveals that this algorithm actually is scaling very poorly. See <a href="http://www.kennethmoreland.com/parallel-scaling-metrics/">Ken's paper</a> for many more details and examples on the subject.</p>
+          </div>
+        </div>
+      </article>
+    </div>
 	       <div class="wrapper style1">
 	         <article class="container" id="misquoted-vis2">
 	           <h2>Header here</h2>
