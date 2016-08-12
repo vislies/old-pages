@@ -275,13 +275,54 @@
         <div class="row">
           <div class="4u 12u(mobile)"> <span class="image fit"><a href="MeaslesEpidemoil.jpg"><img src="MeaslesEpidemoil.jpg" alt="" /></a></span></div>
           <div class="8u 12u(mobile)">
-            <p>Fortunately, the confusion can be cleared up with this chart that was originally published in &quot;Measles mortality: a retrospective look at the vaccine era,&quot; by Am Epidemiol in 1975. This chart shows both the number of cases and the number of deaths by measles. It shows the trends of both previous charts. The number of cases holds constant whereas the number of deaths started dropping in the early 20th century. As explained  <a href="http://www.harpocratesspeaks.com/2014/06/pre-vaccine-declines-in-measles.html">in a blog post by Todd W.</a>, most deaths from measles occured from secondary infections, which are more likely to kill the patient if antibiotics are not administered. Antibiotics were invented in the early 20th century and lead to the drop in measles deaths. In contrast, vaccines either prevent the intial infection or they don't. Once you catch the disease, the vaccine does not good. Thus, the number of cases is a much better metric for the effectiveness of a vaccine than the number of deaths. Thus we can conclude that the Health Sentinel visualization is lying, and the Wikipedia visualization is not.</p>
+            <p>Fortunately, the confusion can be cleared up with this chart that was originally published in &quot;Measles mortality: a retrospective look at the vaccine era,&quot; by Am Epidemiol in 1975. This chart shows both the number of cases and the number of deaths by measles. It shows the trends of both previous charts. The number of cases holds constant whereas the number of deaths started dropping in the early 20th century. As explained <a href="http://www.harpocratesspeaks.com/2014/06/pre-vaccine-declines-in-measles.html">in a blog post by Todd W.</a>, most deaths from measles occured from secondary infections, which are more likely to kill the patient if antibiotics are not administered. Antibiotics were invented in the early 20th century and lead to the drop in measles deaths. In contrast, vaccines either prevent the intial infection or they don't. Once you catch the disease, the vaccine does no good. Thus, the number of cases is a much better metric for the effectiveness of a vaccine than the number of deaths. Thus we can conclude that the Health Sentinel visualization is lying, and the Wikipedia visualization is not.</p>
           </div>
         </div>
       </article>
     </div>
 	       <div class="wrapper style1">
 	         <article class="container" id="misquoted-vis2">
+	           <h2>Plotting Non-Finite Values</h2>
+	           <p>Pat Crossno presented an issue on the behalf of Tim Shead. Unlike most of the other examples shown, this proved to be an open question on the proper way to represent non-finite values in plots, which is a design question Tim faces in the implementation of <a href="https://toyplot.readthedocs.io">Toyplot</a>.</p>
+	           <div class="row">
+	             <div class="4u 12u(mobile)"> <span class="image fit"><a href="PlottingInfinityStandard.svg"><img src="PlottingInfinityStandard.svg" alt="" /></a></span></div>
+	             <div class="8u 12u(mobile)">
+	               <p>At left is a standard plot of some (fabricated) data. The finite values and their trends are clearly visible. But what is happening at the ends of the plots where the curves end?</p>
+	               <p>In between the data points are other measurements. Some are infinites whereas other are not-a-number (NaN). But where are there and what is there meaning. </p>
+	             </div>
+               </div>
+	           <div class="row">
+	             <div class="4u 12u(mobile)"> <span class="image fit"><a href="PlottingInfinityProposal1.svg"><img src="PlottingInfinityProposal1.svg" alt="" /></a></span></div>
+	             <div class="8u 12u(mobile)">
+	               <p>To rectify the situation, Pat and Tim presented several potential alternate designs. In this first one, the ends of the plots are extended upward with an arrow to signify that they continue on to infinity (further clarified with an infinity symbol). This helps distinguish these trends toward infinity from simple stops in the data or from finite values that might extend past the bounds of the plot due to axis scaling.</p>
+	               <p>However, there are problems with this representation. It was quickly pointed out that the slopes of the arrow segments is generally wrong if interpolating to infinity. Another issue is that it tells nothing about any samples that might be in this gap between finite values. </p>
+	             </div>
+               </div>
+	           <div class="row">
+	             <div class="4u 12u(mobile)"> <span class="image fit"><a href="PlottingInfinityProposal2.svg"><img src="PlottingInfinityProposal2.svg" alt="" /></a></span></div>
+	             <div class="8u 12u(mobile)">
+	               <p>This next proposed design tries to rectify the issue of representing unknown values by adding an infinity line where infinity values are plotted. This, however, was not well received. It was generally agreed that the infinity line is visually confusing as it misrepresents infinity to part of the finite space.</p>
+	             </div>
+               </div>
+	           <div class="row">
+	             <div class="4u 12u(mobile)"> <span class="image fit"><a href="PlottingInfinityProposal3.svg"><img src="PlottingInfinityProposal3.svg" alt="" /></a></span></div>
+	             <div class="8u 12u(mobile)">
+	               <p>This final proposed design uses a slightly different representation for the plot, a filled region rather than a curve. However, the filled region does provide a better mechanism for visually representing the transition to infinity via the gradient to the background color as well as show how far the data extend out in infinity.</p>
+	               <p>That said, there was some confusion over why there was a gap in the plot. The reason is that this region contained NaN values, which raises the question of why those are not represented. Whether they are represented or what the representation should be is dependent on what the NaNs mean. Perhaps it signifies a compute error, in which case they are important. Or perhaps they simply signify that no value is present (for example, when constructing a pivot, and the value for a particular cell does not exist), in which case leaving them blank makes sense. </p>
+	             </div>
+               </div>
+	           <div class="row">
+	             <div class="8u 12u(mobile)"> <span class="image fit"><a href="PlottingInfinityProposal4.jpg"><img src="PlottingInfinityProposal4.jpg" alt="" /></a></span></div>
+	             <div class="4u 12u(mobile)">
+	               <p>In response, the Vis Lies audience brainstormed on more possible representations for non-finite values in a series plot. Here is the mock-up presented on one of the note papers provided by the hotel.</p>
+	               <p><br>
+                   We declared this to be Vis Lies' first official poster (albiet a small one).</p>
+	             </div>
+               </div>
+             </article>
+    </div>
+    <div class="wrapper style1">
+	         <article class="container" id="misquoted-vis3">
 	           <h2>Header here</h2>
 	           <p>Text here</p>
 	           <div class="row">
