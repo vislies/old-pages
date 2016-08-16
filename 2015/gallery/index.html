@@ -323,15 +323,53 @@
     </div>
     <div class="wrapper style1">
 	         <article class="container" id="misquoted-vis3">
-	           <h2>Header here</h2>
-	           <p>Text here</p>
-	           <div class="row">
-	             <div class="4u 12u(mobile)"> <span class="image fit"><a href="iPodOwners.png"><img src="iPodOwners.png" alt="" /></a></span></div>
-	             <div class="8u 12u(mobile)">
-	               <p>Description Here</p>
-                 </div>
-               </div>
-             </article>
+	           <h2>20 Years of Blunders</h2>
+	           <p><a href="http://www.comp.leeds.ac.uk/royr/">Roy Ruddle</a> started by reviewing the paper <a href="http://dl.acm.org/citation.cfm?doid=216876.216881">Top Ten Blunders by Visual Designers</a>, which was published 20 years ago. In quick summary, this paper identifies the following 10 blunders in visual display.</p>
+	           <ul>
+	             <li>Use only as many colors as you really need.</li>
+	             <li>Design for people with normal (imperfect) eyesight.</li>
+	             <li>Make the subject stand out from the background.</li>
+	             <li>Design for the medium, not its predecessor.</li>
+	             <li>Make text legible.</li>
+	             <li>Use graphics understandable to people from different cultures.</li>
+	             <li>Design pagesand screens so that headings and graphics do not compete.</li>
+	             <li>Simplify.</li>
+	             <li>In electronic documents use interactive graphics.</li>
+	             <li>Make sure your graphics create a true impression.</li>
+               </ul>
+	           <p>With these blunders in mind, Roy played a game with us. He divided the room into three groups and challenged us to identify the vis blunder on several example images. It was an energetic and fun competition. Scoring was difficult, however, as the room was full of liars. Georges claimed the high score of the first to identify 7 out of 5 blunders first. Unfortunately for Georges, he didn't write this blog. The official winner was Ken's team with a score of 35.2 out of 5.</p>
+      </article>
+    </div>
+    <div class="wrapper style1">
+      <article class="container" id="misquoted-vis5">
+        <h2>Force-Directed Lies</h2>
+        <p><a href="http://people.cs.vt.edu/darendt">Dustin Arendt</a> reminded us to be skeptial of pretty much any visual representation of graphs. Perhaps the most common algorithm for determining the position of elements in a graph is a <a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing">force-directed layout</a>. A force-directed layout works by designating forces between nodes in a graph (attractive forces for connected, repulsive forces for unconnected). The algorithm simulates the movement of these nodes based on these imparted forces to find a steady (or semi-steady) state. The idea, of course, is that at rest the graph would place connected nodes close to each other and unconnected nodes further away.</p>
+        <div class="row">
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="karate-graph.svg"><img src="karate-graph.svg" alt="" /></a></span></div>
+          <div class="8u 12u(mobile)">
+            <p>This turns out to be not the case in even the simplest of graphs. Consider, for example, the small, uncomplicated graph to the left. It should take little effort to find a nice steady state for a mere 35 nodes, and you would expect the physical locations to well represent the respective relationships among the nodes.</p>
+            <p>However, this turns out to not be the case. It turns out that the correlation between connected nodes and physical location is not as strong as you would hope.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="karate-lies.svg"><img src="karate-lies.svg" alt="" /></a></span></div>
+          <div class="8u 12u(mobile)">
+            <p>Here at left is the exact same graph with the same layout. In this image Dustin identifies every instance of when a nodes closest neighbor is not directly connected to it with red lines. As you can see, there are many examples where nearby nodes are in fact not directly related to each other, suggesting that, in fact, force directed layouts are likely performing a&nbsp;disservice when presenting graph structure, even when you don't get a hairball.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="wrapper style1">
+      <article class="container" id="misquoted-vis4">
+        <h2>Header here</h2>
+        <p>Text here</p>
+        <div class="row">
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="iPodOwners.png"><img src="iPodOwners.png" alt="" /></a></span></div>
+          <div class="8u 12u(mobile)">
+            <p>Description Here</p>
+          </div>
+        </div>
+      </article>
     </div>
     <!-- Work -->
         <!--
