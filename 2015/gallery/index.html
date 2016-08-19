@@ -314,7 +314,7 @@
 	           <div class="row">
 	             <div class="8u 12u(mobile)"> <span class="image fit"><a href="PlottingInfinityProposal4.jpg"><img src="PlottingInfinityProposal4.jpg" alt="" /></a></span></div>
 	             <div class="4u 12u(mobile)">
-	               <p>In response, the Vis Lies audience brainstormed on more possible representations for non-finite values in a series plot. Here is the mock-up presented on one of the note papers provided by the hotel.</p>
+	               <p>In response, the Vis Lies audience brainstormed on more possible representations for non-finite values in a series plot. Here is the mock-up drawn by <a href="http://www.ecm.uwa.edu.au/contact/profiles?type=profile&dn=cn=Jonathan Knispel,ou=Pawsey at UWA,ou=Centres (Faculty of Engineering\2C Computing and Mathematics),ou=Faculty of Engineering\2C Computing and Mathematics,ou=Faculties,o=The University of Western Australia">Jonathan Knispel</a> on one of the note papers provided by the hotel.</p>
 	               <p><br>
                    We declared this to be Vis Lies' first official poster (albiet a small one).</p>
 	             </div>
@@ -360,15 +360,56 @@
       </article>
     </div>
     <div class="wrapper style1">
-      <article class="container" id="misquoted-vis4">
-        <h2>Header here</h2>
-        <p>Text here</p>
+      <article class="container" id="misquoted-vis6">
+        <h2>Confusing Colors</h2>
+        <p><a href="https://www.nsf.gov/mobile/staff/staff_bio.jsp?lan=mzemanko&org=IIS">Maria Zemankova</a> revived some slides from many years ago revialing some rather poor color choices. Good color makes data visible, but bad colors can obscure data. First is an example of a pair of visualizations, which are used together, that use inconsistent colors in a very confusing way.</p>
         <div class="row">
-          <div class="4u 12u(mobile)"> <span class="image fit"><a href="iPodOwners.png"><img src="iPodOwners.png" alt="" /></a></span></div>
-          <div class="8u 12u(mobile)">
-            <p>Description Here</p>
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="InconsistentColors1.png"><img src="InconsistentColors1.png" alt="" /></a></span></div>
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="InconsistentColors2.png"><img src="InconsistentColors2.png" alt="" /></a></span></div>
+          <div class="4u 12u(mobile)">
+            <p>These two visualizations at left (supposedly) show related trends. Taken alone, the colors are not good, but not terrible. By why do the colors shift around a bit from one visualization to another? And why, in the B visualization, is the same color used for a slight positive trend and no data?</p>
           </div>
         </div>
+        <div class="row">
+          <div class="4u 12u(mobile)"> <span class="image fit"><a href="BadColors.png"><img src="BadColors.png" alt="" /></a></span></div>
+          <div class="8u 12u(mobile)">
+            <p>Of course, colors don't have to be inconsistent to be bad. It just wouldn't be Vis Lies if no one brought up the rainbow color map. Here, these color qualify as they were clearly, naively pulled from rainbow colors. But to make a bad color map even worse, the colors are reversed from their natural perceptive orientation. Cool dark blues, which are supposed to signify maximum value, feel muted whereas the red color of low values pop out more than any color.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="wrapper style1">
+      <article class="container" id="misquoted-vis4">
+        <h2>Two Points = Trend?</h2>
+        <div class="row">
+      <div class="4u 12u(mobile)"> <span class="image fit"><a href="AbortionLineChart.jpg"><img src="AbortionLineChart.jpg" alt="" /></a></span></div>
+          <div class="8u 12u(mobile)">
+            <p>We had a field day with line charts this year. This chart at left was recently presented to the US congress in an argument to cut fedral funding to the Planned Parenthood organization. The chart shows a dramatic shift of funds from lifesaving cancer screening and prevention to abortions.</p>
+            <p>However, a closer inspection reveals that this chart is a big fat liar. The scales of the trend lines are all off, and in fact the amount spent in the respective services is not close to each other. </p>
+      </div>
+        </div>
+<div class="row">
+  <div class="4u 12u(mobile)"> <span class="image fit"><a href="AbortionLineChartCorrected.svg"><img src="AbortionLineChartCorrected.svg" alt="" /></a></span></div>
+  <div class="8u 12u(mobile)">
+    <p>Here is a (somewhat) corrected representation of the data in this chart. When presented correctly, it is clear that the amount spent by Planned Parenthood on abortions is far less than there other services. It is also clear that the amount of funding increase for abortions is greatly exaggerated in the previous chart.</p>
+    <p>Most likely, previous funding cuts forced Planned Parenthood to reduce the prevention services they spend the majority of their funds on. Ironically, those funding cuts are now used as the reason for more funding cuts. </p>
+  </div>
+</div>
+<p>But the problems with this visualization don't stop there. I can't help but notice that each trend is derived from only two data points (taken at 2006 and 2013). Why only these two dates? Surely the data for the intervening years is also available. Is it really a steady decline, or was there a sharp drop? Has the funding recently dropped or has it stabilized?</p>
+<div class="row">
+  <div class="4u 12u(mobile)"> <span class="image fit"><a href="TwoValueLineChart.gif"><img src="TwoValueLineChart.gif" alt="" /></a></span></div>
+  <div class="8u 12u(mobile)">
+    <p>Generally, you should be very skeptical whenever a trend line is created with such little data. Drawing a trend line between any two single values is sure to&nbsp;elicit an unsupported conclusion. Take for example <a href="http://accessibility.psu.edu/images/charts/">the plot at right</a>.&nbsp;As far as I can tell, the numbers come from exactly two samples taken from a survey of computer users for a particular Linguistics Seminar at Penn State (about 20 students each). From these data we might assume that by now Apple </p>
+    <p>To be fair, this plot is just an example to show graphics elements of chart, not trying to make a point of the data. Nevertheless, any conclusion drawn from this plot is false.</p>
+    </div>
+</div>
+<div class="row">
+  <div class="4u 12u(mobile)"> <span class="image fit"><a href="TwoValueLineChartEdited.png"><img src="TwoValueLineChartEdited.png" alt="" /></a></span></div>
+  <div class="4u 12u(mobile)">
+    <p>The problem with drawing a trend from only two sample points, is that it is easy to draw any conclusion you like simply by picking the two "right" points (either intentionally or not). This can even lead to humourously malformed conclusions such as the graph on the left demonstrating the conclusion on the right.</p>
+  </div>
+  <div class="4u 12u(mobile)"> <span class="image fit"><a href="TwoValueObama.jpg"><img src="TwoValueObama.jpg" alt="" /></a></span></div>
+</div>
       </article>
     </div>
     <!-- Work -->
