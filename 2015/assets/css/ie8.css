@@ -11,7 +11,7 @@
 	form select,
 	form textarea {
 		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		-ms-behavior: url("../../../assets/css/assets/js/ie/PIE.htc");
 	}
 
 	input[type="button"],
@@ -20,7 +20,7 @@
 	button,
 	.button {
 		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		-ms-behavior: url("../../../assets/css/assets/js/ie/PIE.htc");
 	}
 
 /* Section/Article */
@@ -44,7 +44,7 @@
 		position: relative;
 		top: 0 !important;
 		overflow: hidden;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		-ms-behavior: url("../../../assets/css/assets/js/ie/PIE.htc");
 	}
 
 		ul.social li a:before {
@@ -61,17 +61,17 @@
 
 	#nav a {
 		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		-ms-behavior: url("../../../assets/css/assets/js/ie/PIE.htc");
 	}
 
 /* Articles */
 
 	#top .image {
 		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		-ms-behavior: url("../../../assets/css/assets/js/ie/PIE.htc");
 	}
 
 		#top .image img {
 			position: relative;
-			-ms-behavior: url("assets/js/ie/PIE.htc");
+			-ms-behavior: url("../../../assets/css/assets/js/ie/PIE.htc");
 		}
