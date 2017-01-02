@@ -1946,7 +1946,17 @@ li {
 }
 .image-right {
     float: right;
+    padding-left: 5px;
 }
 img.image-full {
     width: 100%;
 }
+img.image-half {
+    width: 48%;
+    padding: 1%;
+}
+img.image-third {
+    width: 31%;
+    padding: 1%;
+}
+
