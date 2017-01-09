@@ -72,6 +72,28 @@ $(function() {
     }
   });
 });
+$(function() {
+    var $sidebar   = $("#sidebar"),
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+
+    $window.scroll(function() {
+        // Only do the scroll if the sidebar is floating on the left. On small
+        // windows, it is placed on top, and we do not want to scroll it.
+        if ($sidebar.css("float") == "left") {
+            if ($window.scrollTop() > offset.top) {
+                $sidebar.stop().animate({
+                    marginTop: $window.scrollTop() - offset.top + topPadding
+                });
+            } else {
+                $sidebar.stop().animate({
+                    marginTop: 0
+                });
+            }
+        }
+    });
+});
 	</script>
 
 	<!--[if lt IE 9]><script src="/media/jui/js/html5.js"></script><![endif]-->
