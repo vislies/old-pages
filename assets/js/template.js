@@ -10,7 +10,8 @@
 {
 	$(document).ready(function()
 	{
-		$('*[rel=tooltip]').tooltip()
+        // Removed because it relies on script we are not using
+		//$('*[rel=tooltip]').tooltip()
 
 		// Turn radios into btn-group
 		$('.radio.btn-group label').addClass('btn');

@@ -53,10 +53,11 @@
     <script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="assets/js/template.js"></script>
 	<script>
-jQuery(window).on('load',  function() {
-				new JCaption('img.caption');
-			});
-jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+// Removed because it relies on script we are not using
+//jQuery(window).on('load',  function() {
+//				new JCaption('img.caption');
+//			});
+//jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
 window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}if(r){r.open("GET","/index.php?option=com_ajax&format=json",true);r.send(null)}},840000);
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
