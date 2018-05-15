@@ -126,7 +126,6 @@ $(function() {
 <li class=""><a href="#top"><strong>VisLies 2017 Gallery</strong></a></li>
 <li class="nav-sub-item"><a href="#hurricane">Rock you like a Hurricane</a></li>
 <li class="nav-sub-item"><a href="#cherry-picked-climate">Cherry-Picked Climate</a></li>
-<li class="nav-sub-item"><a href="#killing-trend">Killing a Trend</a></li>
 <li class="nav-sub-item"><a href="#wyorado">Plague of Wyorado</a></li>
 <li class="nav-sub-item"><a href="#uneven-scales">Uneven Scales</a></li>
 <li class="nav-sub-item"><a href="#treacherous-title">Treacherous Title</a></li>
@@ -134,6 +133,7 @@ $(function() {
 <li class="nav-sub-item"><a href="#lake-mead">Lake Mead Water Levels</a></li>
 <li class="nav-sub-item"><a href="#graffiti">The Graffiti Scourge</a></li>
 <li class="nav-sub-item"><a href="#eclipse">Total Eclipse of the Rainbow</a></li>
+<li class="nav-sub-item"><a href="#killing-trend">Killing a Trend</a></li>
 <!--<li class=""><a href="2017/gallery/"><strong>VisLies 2017 Gallery</strong></a></li>-->
 <li class=""><a href="../2016">VisLies 2016</a></li>
 <li class="nav-sub-item"><a href="../2016/gallery">Gallery</a></li>
@@ -188,13 +188,6 @@ $(function() {
 								    <p>In the grand scheme of things, 15 years is not very long. What happens if we expand the time frame.</p>
 								    <p><a href="https://drive.google.com/open?id=1_3zT7iTTBZN5UScnFjMPceLBC6sQe46y"><img src="accurate-climate-thumbnail.png" alt="" class="image-left"/></a>This second graph expands the data from 1900 to 2017. The shorter 15 year period from the first graph is hilighted in the gray box. As you can see, if we choose to look only at that specific 15 year period, the average global temperature did hold steady. But the decades before this region saw a noticible average increase in temperature and the years following this region also show rising temperature. When shown in a larger context, the time frame from 1997&#8211;2012 does not accurately represent the larger trend.</p>
 								  </div>
-								  <h3 id="killing-trend">Killing a Trend</h3>
-								  <div class="image-constrain">
-								    <p><a href="https://drive.google.com/open?id=1RhD4i22u8vqnlQt5zF66LU5FFONw-QJt"><img src="homicide-drop-thumbnail.png" alt="" width="300" height="228" class="image-right"/></a><a href="https://sites.google.com/site/bernicerogowitz/" target="_blank">Bernice</a> next presented this visualization showing homicides in the Philippines. (This visualization was earlier reported in a <a href="https://www.rappler.com/thought-leaders/177731-duterte-change-fake-news-graphs-spot">blog post by JC Punongbayan</a>.) The trend shows a relatively constant homicide rate with a recent and dramatic drop off.</p>
-								    <p>But look closer. The second from the right entry represents 2016, but not all of 2016. It only reports the homicides during the first 6 months. So the graph suggests that the number of homicides dropped by half, but that is only because you are only counting for half the year. In actuality, the homicide rate has not changed much at all.</p>
-								    <p>This vis lie is not entirely uncommon. Sometimes well meaning people, in an effort to provide the most recent data (such as midway through a year). But this visualization takes it a step forward by providing yet another data point that shows <em>only 2 months</em>. Clearly, this entry is going to be much smaller than the other values, yet this last entry is circled to emphasize it as if it is pivital rather than irrelevent.</p>
-								  </div>
-								  <p>&nbsp;</p>
 								  <h3 id="wyorado">Plague of Wyorado</h3>
 								  <div class="image-constrain">
 								    <p><a href="USATodayColoradoMarijuana.jpg"><img src="USATodayColoradoMarijuana.jpg" alt="" width="300" height="313" class="image-right" border="0"/></a></p>
@@ -257,7 +250,12 @@ $(function() {
 								    <p>To be fair, this colors used here are not strictly rainbow colors. The ends are changed so that the 0% end of the scale (total eclipse) is set to black and the 100% end of the scale (no eclipse) is set to white. Those are good colors to represent total darkness and lightness. However, there is one glaring issue with the implementation of these colors. The black does not simply represent no light. The black color is interpolated to blue at about 10% light. This means that the black bleeds significantly beyond the border of total eclipse, making it seem like a much bigger swath of land than it actually covers. This map makes it seem like the total eclipse covered entire states like Oregon when in fact the actual band of total eclipse was much more narrow.</p>
 								    <p>There are lots of better examples of eclipse maps. <a href="https://accuweather.brightspotcdn.com/8d/14/02b655d14ff395d32b9d32926cc7/eclipse-path-us-percent.jpg">This map from accuweather</a> makes much better use of color in a static display to give a very clear indication of eclipse coverage. The newpaper article in question was about the movement of the eclipse, so an animation is appropriate. <a href="https://svs.gsfc.nasa.gov/4314">This animation from NASA</a> provides a much more accurate (and more attractive) display.</p>
 								  </div>
-								  <p>&nbsp;</p>
+								  <h3 id="killing-trend">Killing a Trend</h3>
+                                  <div class="image-constrain">
+                                    <p><a href="https://drive.google.com/open?id=1RhD4i22u8vqnlQt5zF66LU5FFONw-QJt"><img src="homicide-drop-thumbnail.png" alt="" width="300" height="228" class="image-right"/></a><a href="https://sites.google.com/site/bernicerogowitz/" target="_blank">Bernice</a> next presented this visualization showing homicides in the Philippines. (This visualization was earlier reported in a <a href="https://www.rappler.com/thought-leaders/177731-duterte-change-fake-news-graphs-spot">blog post by JC Punongbayan</a>.) The trend shows a relatively constant homicide rate with a recent and dramatic drop off.</p>
+                                    <p>But look closer. The second from the right entry represents 2016, but not all of 2016. It only reports the homicides during the first 6 months. So the graph suggests that the number of homicides dropped by half, but that is only because you are only counting for half the year. In actuality, the homicide rate has not changed much at all.</p>
+                                    <p>This vis lie is not entirely uncommon. Sometimes well meaning people, in an effort to provide the most recent data (such as midway through a year). But this visualization takes it a step forward by providing yet another data point that shows <em>only 2 months</em>. Clearly, this entry is going to be much smaller than the other values, yet this last entry is circled to emphasize it as if it is pivital rather than irrelevent.</p>
+                                  </div>
 								</div>
 					</div>
 								</main>
